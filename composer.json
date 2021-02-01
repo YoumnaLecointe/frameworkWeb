@@ -8,8 +8,6 @@
     "require-dev": {
         "monolog\/monolog": "^2.2",
         "phpmv\/ubiquity-dev": "^0.1",
-        "phpmv\/ubiquity-webtools": "^2.3",
-        "czproject\/git-php": "^3.13",
         "phpmv\/ubiquity-attributes": "dev-main"
     },
     "autoload": {

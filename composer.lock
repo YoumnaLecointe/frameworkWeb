@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a754a5fae99b2702b735ffcb75b19d76",
+    "content-hash": "0c6f277723bfe6b4180e02b92d961ef4",
     "packages": [
         {
             "name": "frameworks/jquery",
@@ -38,16 +38,16 @@
         },
         {
             "name": "phpmv/php-mv-ui",
-            "version": "2.3.16",
+            "version": "2.3.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpMv/phpMv-UI.git",
-                "reference": "b5e440e9be2075ede9e11defbb011440da0c4c3c"
+                "reference": "e38ed86d7a756be41658229e35a2931710cdf3f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpMv/phpMv-UI/zipball/b5e440e9be2075ede9e11defbb011440da0c4c3c",
-                "reference": "b5e440e9be2075ede9e11defbb011440da0c4c3c",
+                "url": "https://api.github.com/repos/phpMv/phpMv-UI/zipball/e38ed86d7a756be41658229e35a2931710cdf3f2",
+                "reference": "e38ed86d7a756be41658229e35a2931710cdf3f2",
                 "shasum": ""
             },
             "require": {
@@ -98,9 +98,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpMv/phpMv-UI/issues",
-                "source": "https://github.com/phpMv/phpMv-UI/tree/2.3.16"
+                "source": "https://github.com/phpMv/phpMv-UI/tree/2.3.17"
             },
-            "time": "2021-01-16T23:56:21+00:00"
+            "time": "2021-01-31T17:32:18+00:00"
         },
         {
             "name": "phpmv/ubiquity",
@@ -398,52 +398,6 @@
     ],
     "packages-dev": [
         {
-            "name": "czproject/git-php",
-            "version": "v3.18.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/czproject/git-php.git",
-                "reference": "db664a8d5a1fbfd33e1cdd6ae65bc411bd18dc73"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/czproject/git-php/zipball/db664a8d5a1fbfd33e1cdd6ae65bc411bd18dc73",
-                "reference": "db664a8d5a1fbfd33e1cdd6ae65bc411bd18dc73",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "nette/tester": "^1.1"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Jan Pecha",
-                    "email": "janpecha@email.cz"
-                }
-            ],
-            "description": "Library for work with Git repository in PHP.",
-            "keywords": [
-                "git"
-            ],
-            "support": {
-                "issues": "https://github.com/czproject/git-php/issues",
-                "source": "https://github.com/czproject/git-php/tree/v3.18.1"
-            },
-            "time": "2020-07-03T08:02:12+00:00"
-        },
-        {
             "name": "monolog/monolog",
             "version": "2.2.0",
             "source": {
@@ -597,16 +551,16 @@
         },
         {
             "name": "phpmv/ubiquity-dev",
-            "version": "0.1.8",
+            "version": "0.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpMv/ubiquity-dev.git",
-                "reference": "13a62bb6dd82c0655dd589ee24d3b6714b8496e4"
+                "reference": "2266f6a47c3d33a29bdaffcd247bd3a5bfee911b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpMv/ubiquity-dev/zipball/13a62bb6dd82c0655dd589ee24d3b6714b8496e4",
-                "reference": "13a62bb6dd82c0655dd589ee24d3b6714b8496e4",
+                "url": "https://api.github.com/repos/phpMv/ubiquity-dev/zipball/2266f6a47c3d33a29bdaffcd247bd3a5bfee911b",
+                "reference": "2266f6a47c3d33a29bdaffcd247bd3a5bfee911b",
                 "shasum": ""
             },
             "require": {
@@ -645,65 +599,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpMv/ubiquity-dev/issues",
-                "source": "https://github.com/phpMv/ubiquity-dev/tree/0.1.8"
+                "source": "https://github.com/phpMv/ubiquity-dev/tree/0.1.9"
             },
-            "time": "2021-01-21T00:33:15+00:00"
-        },
-        {
-            "name": "phpmv/ubiquity-webtools",
-            "version": "2.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpMv/ubiquity-webtools.git",
-                "reference": "45cff11c170ee40ee543804527643736ed108d34"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpMv/ubiquity-webtools/zipball/45cff11c170ee40ee543804527643736ed108d34",
-                "reference": "45cff11c170ee40ee543804527643736ed108d34",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.4",
-                "phpmv/php-mv-ui": ">2.2.19",
-                "phpmv/ubiquity-dev": "^0.1"
-            },
-            "type": "extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ubiquity\\": "src/Ubiquity/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Jean-Christophe HERON",
-                    "email": "myaddressmail@gmail.com",
-                    "role": "Lead developer"
-                }
-            ],
-            "description": "Webtools for Ubiquity framework",
-            "keywords": [
-                "framework",
-                "mvc",
-                "orm",
-                "php",
-                "php-framework",
-                "tools"
-            ],
-            "support": {
-                "issues": "https://github.com/phpMv/ubiquity-webtools/issues",
-                "source": "https://github.com/phpMv/ubiquity-webtools/tree/2.4.2"
-            },
-            "time": "2021-01-17T16:13:12+00:00"
+            "time": "2021-01-30T01:35:33+00:00"
         },
         {
             "name": "psr/log",
