@@ -19,9 +19,13 @@
 		<div class="ui inverted secondary menu">
 			<a href="{{ path('home') }}" class="item">Home</a>
 			<div class="item">{{ _userInfo|raw }}</div>
+
+			<a href="{{ path('home') }}" class="item">Autre</a>
+			<div class="item">{{ _userInfo|raw }}</div>
 		</div>
 	</div>
 </div>
+
 {% endblock %}
 {% block head %}
 <div class="ui container">
