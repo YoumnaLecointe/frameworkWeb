@@ -29,6 +29,11 @@ class Product{
 	private $comments;
 
 	
+	#[Column(name: "stock",dbType: "int(11)")]
+	#[Validator(type: "notNull",constraints: [])]
+	private $stock;
+
+	
 	#[Column(name: "image",nullable: true,dbType: "text")]
 	private $image;
 
@@ -87,6 +92,14 @@ class Product{
 
 	public function setComments($comments){
 		$this->comments=$comments;
+	}
+
+	public function getStock(){
+		return $this->stock;
+	}
+
+	public function setStock($stock){
+		$this->stock=$stock;
 	}
 
 	public function getImage(){
