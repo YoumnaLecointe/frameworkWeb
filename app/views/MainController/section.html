@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<!-- Ajout des sections -->
+<h1>Mes sections</h1>
+<div class="ui grid">
+  <div class="four wide column">
+    <div class="ui vertical fluid inverted menu">
+      {% for section in listSection %}
+      <a href="{{ path('section', [section.id]) }}" class="ui item"> {{ section.name }}
+        <span class="bout"> {{ section.products|length }}</span>
+      </a>
+      {% endfor %}
+      <br>
+    </div>
+  </div>
+
+  <div class="twelve wide column">
+    <h3> {{ section.name }} </h3>
+    <fieldset>
+      <legend>Produits</legend>
+      <div class="ui equal width center aligned padded grid">
+        {% for prod in product %}
+        <div class="four wide column">
+          <a href="{{ path('product', [section.id, prod.id]) }}" style="color:white"></a>
+            <img src="/public/assets/img/{{ prod.image }}.jpg" alt="alternatetext" width="100" height="80">
+            <div>{{ prod.name }}</div>
+            <strong>{{prod.price}}€</strong>
+            <a href="{{ path('defaultBasket', [article.id]) }}"><i class="shopping cart icon"></i></a>
+            <a href="{{ path('product', [section.id, prod.id]) }}"><button><i class="tasks icon"></i></button></a>
+        </div>
+        {% endfor %}
+      </div>
+    </fieldset>
+  </div>
+</div>
+
+<style>
+  .bout{
+    background: white;
+    color: black;
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 12px;
+    cursor: pointer;
+  }
+</style>
