@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<h1>Mes paniers</h1>
+<ul>
+    {% for basket in baskets %}
+    <li>{{ basket.name }}</li>
+    {% endfor %}
+</ul>
