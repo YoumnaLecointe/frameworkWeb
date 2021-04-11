@@ -1,1 +1,34 @@
-<p>Page nouveau panier</p>
+
+<div class="ui grid ">
+
+    <div class="ui wide column">
+        <div class="np">
+            <h1>Nouveau panier</h1>
+            <form class="ui form" action="{{ path('newBasket') }}" method="post">
+                <div class="field">
+                    <label>Nom</label>
+                    <input type="text" name="name" placeholder="Nom">
+                </div>
+                <button class="ui button" type="submit">Valider</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="ui grid ">
+    <div class="ui wide column">
+        <div class="np">
+            <h1>Mes paniers</h1>
+            {% for basket in baskets %}
+            <li>{{ basket.name }}</li>
+            {% endfor %}
+            </div>
+    </div>
+</div>
+
+<style>
+    .np{
+        background: white;
+        border-radius: 5px;
+    }
+</style>
