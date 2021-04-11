@@ -1,6 +1,13 @@
 <h1>Mes commandes</h1>
-<ul>
-    {% for order in orders %}
-    <li>{{ order.dateCreation }}</li>
-    {% endfor %}
-</ul>
+<div class="ui grid">
+        <div class="ui top attached header">Mes commandes</div>
+        <div class="ui attached segment">
+            {% for order in orders %}
+            <li>{{ order.dateCreation }}</li>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<style>
+
+</style>
