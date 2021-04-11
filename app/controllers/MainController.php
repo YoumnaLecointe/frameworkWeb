@@ -1,6 +1,7 @@
 <?php
 namespace controllers;
 
+ use models\Basket;
  use models\Order;
  use models\Product;
  use services\dao\OrgaRepository;
@@ -56,5 +57,11 @@ class MainController extends ControllerBase{
     protected function getAuthController(): AuthController
     {
         return new MyAuth($this);
+    }
+
+    #[Route ('basket', name:'basket')]
+    public function basket(){
+        $baskets = DAO::getAll(Basket::class, 'idUser= ?', false, [USession::get("idUser")]);
+        $this->loadDefaultView(['baskets'=>$baskets]);
     }
 }
