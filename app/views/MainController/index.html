@@ -1,24 +1,34 @@
-<div class="ui grid ">
 
-    <div class="dix wide column ui basic segment"></div>
-
-    <div class="black seven wide column ui basic segment">
+    <div class="four wide column ui basic segment"></div>
+    <div class="prem">
         <h2>Store</h2>
-        <a href="{{path('order')}}" class="ui button">Mes commandes </a>
+        <div class="bt"><a href="{{path('order')}}" class="ui button">Mes commandes </a>
         <br/><br/>
         <a href="{{path('store')}}" class="ui button">Parcourir le store</a>
+        </div>
     </div>
-
-    <div class="black seven wide column ui basic segment">
+    <div class="four wide column ui basic segment"></div>
+    <div class="premi">
         <h2>Panier</h2>
+        <div class="bt">
         <a href="{{path('newBasket')}}" class="ui button">Nouveau panier</a>
         <a href="{{path('basket')}}" class="ui button">Mes paniers</a>
     </div>
-    <div class="black sixteen wide column ui basic segment">
-        <h2>Promotion en cours</h2>
     </div>
-    <div class="black sixteen wide column ui basic segment">
-        <h2>Consulté récemment</h2>
-        <p>Récent</p>
-    </div>
-</div>
+    <style>
+        .prem{
+            background: black;
+            width: 420px;
+            color:white;
+            height: 150px;
+        }
+        .bt{
+            margin-left: 12px;
+        }
+        .premi{
+            background: black;
+            width: 420px;
+            color:white;
+            height: 110px;
+        }
+    </style>
