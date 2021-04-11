@@ -64,4 +64,10 @@ class MainController extends ControllerBase{
         $baskets = DAO::getAll(Basket::class, 'idUser= ?', false, [USession::get("idUser")]);
         $this->loadDefaultView(['baskets'=>$baskets]);
     }
+
+    #[Route ('newBasket', name:'newBasket')]
+    public function newBasket(){
+        $newbasket = DAO::getAll(Order::class, 'idUser= ?', false, [USession::get("idUser")]);
+        $this->loadDefaultView(['newbasket'=>$newbasket]);
+    }
 }
