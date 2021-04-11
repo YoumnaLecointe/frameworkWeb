@@ -1,0 +1,62 @@
+<!--Affichage du produit selectionné-->
+<h1>Produit selectionné</h1>
+<div class="ui grid">
+    <div class="four wide column">
+        <div class="ui vertical fluid inverted menu">
+            {% for section in listSection %}
+            <a href="{{ path('section', [section.id]) }}" class="ui item"> {{ section.name }}
+                <span class="bout"> {{ section.products|length }}</span>
+            </a>
+            {% endfor %}
+            <br>
+        </div>
+    </div>
+    <div class="twelve wide column">
+        <h3> {{ productid.name }} </h3>
+
+        <!-- Affichage de la fiche produit selectionné-->
+        <fieldset>
+            <b><legend>Fiche produit</legend></b>
+            <div class="ui equal width center aligned padded grid">
+                <div class="row">
+                    <div class="column"><img src="/public/assets/img/{{ productid.image }}.jpg" alt="alternatetext" width="300" height="240"></div>
+                    <div class="column">
+                        <h2>{{ productid.name }}</h2>
+                        <span class="ui black text"><h3>{{productid.price}}€</h3></span>
+                        <span class="ui red text"> <h3>{{ product.promotion }}</h3> </span>
+                        <div class="four wide column ui basic segment"></div>
+                        <div class="row">
+                            <!-- Commentaire du produit-->
+                            <div class="column"><div class="">{{ productid.comments }}</div></div>
+                            <div class="column">
+                                <div class="four wide column ui basic segment"></div>
+                                <a href="{{ path('section', [section.id]) }}" class="ui button black">Retour vers {{ section.name }}</a>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+
+
+
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<style>
+    .bout{
+        background: white;
+        color: black;
+        border-radius: 20px;
+        margin-left: 10px;
+        width: 12px;
+        cursor: pointer;
+    }
+    fieldset {
+        background: white;
+        color: black;
+    }
+    legend{
+    c
+    }
+</style>
