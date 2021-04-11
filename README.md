@@ -1,3 +1,14 @@
+##Projet
+
+Auteur: Lecointe Youmna TD2.2
+
+Projet en cours, non finalisé.
+->Connexion fonctionnelle
+->Présentation des produits
+->Section affichable
+->Selection du produit et affichage des produits
+
+
 # tds
 
 This README outlines the details of collaborating on this Ubiquity application.
